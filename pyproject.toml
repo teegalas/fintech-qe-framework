@@ -1,0 +1,27 @@
+[project]
+name = "fintech-qe-framework"
+version = "0.1.0"
+requires-python = ">=3.11"
+description = "Modern Python test automation framework for a fintech-style API + UI (Staff QE take-home)."
+authors = [{ name = "Santosh Teegala" }]
+readme = "README.md"
+
+dependencies = [
+  "pytest",
+  "pytest-asyncio",
+  "httpx",
+  "pydantic>=2",
+  "pydantic-settings",
+  "playwright",
+  "pytest-playwright",
+  "allure-pytest",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+markers = [
+  "negative: negative / error scenarios",
+  "auth: authentication & authorization",
+  "ui: ui tests",
+]
