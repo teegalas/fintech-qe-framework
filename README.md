@@ -95,7 +95,7 @@ fintech-qe-framework/
 
 ---
 
-# 🧩 Framework Components Explained in Human English
+# 🧩 Framework Components Explained.
 
 ## 1. config/settings.py  
 This is where your environment configuration lives.  
